@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word-break</title>
+    <style>
+        .content {
+            width: 70%;
+
+        }
+
+        .p {
+            border: 1px solid #000;
+        }
+
+        .normal {
+            word-break: normal;
+            word-wrap: break-word;
+
+        }
+
+        .break-all {
+            word-break: break-all;
+        }
+
+        .keep-all {
+            word-break: keep-all;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <p class="normal">
+            <!-- 中文假字指令ct-------ctlorem -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt saepe eveniet ut assumenda accusamus
+            deleniti consectetur mollitia dicta illo, incidunt voluptatem similique. Quo quis expedita consequuntur enim
+            officiis distinctio.
+            韓國記憶特價民間國產精靈，不限說了情況提醒房產金融當我心情呼吸，進來就不文學報告發表較高別人傷害貨幣其它一時警察監督練習記住，標籤圖片前後室內不良能源參考浪費的錢主任注重老婆開發者大會，一會兒畢業實行，說明心靈，相冊金屬估計，點頭二十尋找工人相冊，篇文章。
+
+    </div>
+    <div class="content">
+        <p class="break-all">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt saepe eveniet ut assumenda accusamus
+            deleniti consectetur mollitia dicta illo, incidunt voluptatem similique. Quo quis expedita consequuntur enim
+            officiis distinctio.ctlorem*3
+    </div>
+    <div class="content">
+        <p class="keep-all">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt saepe eveniet ut assumenda accusamus
+            deleniti consectetur mollitia dicta illo, incidunt voluptatem similique. Quo quis expedita consequuntur enim
+            officiis distinctio.
+    </div>
+
+</body>
+
+</html>

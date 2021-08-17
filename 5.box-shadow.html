@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-shadow</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: .5s;
+            margin-bottom: 10px;
+        }
+
+        .box:hover {
+            box-shadow: 10px 10px 5px #CCC;
+
+        }
+
+        .box2 {
+            box-shadow: 10px 10px 5px #CCC inset;
+        }
+
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color: rgba(197, 66, 66, 0.849);
+            box-shadow: 0 0 30px orange inset;
+            /* 內陰影inset */
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box box2"></div>
+    <div class="box3"></div>
+</body>
+
+</html>

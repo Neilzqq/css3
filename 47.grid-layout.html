@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grad-layout</title>
+    <style>
+        .counter {
+            width: 800px;
+            background-color: #ccc;
+            padding: 10px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 240px auto;
+            Grid-template-rows: 100px 200px 1fr;
+            Grid-template-areas:
+                "header header "
+                "menu content"
+                "footer footer ";
+
+        }
+
+        .header {
+            grid-area: header;
+            background-color: darksalmon;
+        }
+
+        .menu {
+            grid-area: menu;
+            background-color: darkturquoise;
+        }
+
+        .content {
+            grid-area: content;
+            background-color: forestgreen;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: khaki;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="counter">
+        <div class="header">header</div>
+        <div class="menu">menu</div>
+        <div class="content">content</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+
+</html>

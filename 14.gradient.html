@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient</title>
+    <style>
+        .box {
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(red, orange, yellow, green, blue);
+            margin-bottom: 10px;
+        }
+
+        .box2 {
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to right, red, orange, yellow, green, blue);
+            margin-bottom: 10px;
+        }
+
+        .box3 {
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(135deg, red, orange, yellow, green, blue);
+            margin-bottom: 10px;
+        }
+
+        .box4 {
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(90deg, red, orange, yellow, green, blue);
+            margin-bottom: 10px
+        }
+
+        .box5 {
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to right, red 30%, orange, yellow, green, blue 60%);
+            margin-bottom: 10px
+        }
+
+        .box6 {
+            background: linear-gradient(217deg, rgba(226, 82, 82, 0.993), rgb(252, 195, 38));
+            margin-bottom: 10px
+        }
+
+        .box7 {
+            background: linear-gradient(127deg, #b99d1e, yellow 70.71%),
+                linear-gradient(302deg, yellow, red 70.71%);
+            margin-bottom: 10px
+        }
+
+        .box8 {
+            background: linear-gradient(to right, rgba(241, 171, 171, 0.322)50%, red 50%), (to bottom, rgb(241, 171, 171)50%, red 50%);
+            box-sizing: 20px 20px;
+            margin-bottom: 10px
+        }
+
+        .box9 {
+            background: radial-gradient(purple, yellow 25%, red 100%);
+            margin-bottom: 10px
+        }
+
+        .box10 {
+            background: radial-gradient(circle, purple, yellow 25%, red 100%);
+            margin-bottom: 10px
+        }
+
+        .box11 {
+            background: radial-gradient(at 80% 80px, red, purple);
+            margin-bottom: 10px
+        }
+
+        .box12 {
+            background: radial-gradient(circle at bottom right, red, purple);
+            margin-bottom: 10px
+        }
+
+        h1 {
+            font-size: 20px;
+            background: radial-gradient(circle at bottom right, red, purple);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+
+        }
+
+        .box13 {
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to left, red, orange, yellow, green, blue);
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+    <div class="box5">box5</div>
+    <div class="box6">box6</div>
+    <div class="box7">box7</div>
+    <div class="box8">box8</div>
+    <div class="box9">box9</div>
+    <div class="box10">box10</div>
+    <div class="box11">box11</div>
+    <div class="box12">box12</div>
+    <div class="box13">box13</div>
+    <h1>hello world!</h1>
+
+</body>
+
+</html>

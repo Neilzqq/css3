@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background size</title>
+    <style>
+        .city {
+            width: 850px;
+            height: 250px;
+            background: url(./images/city.jpg) center center no-repeat;
+            background-size: 300px 300px;
+            margin: 10px;
+            outline: 1px solid #ccc;
+
+        }
+
+        .content {
+            /* -----完整原圖+等比例------ */
+            background-size: content;
+        }
+
+        .cover {
+            /* 填滿+等比例 */
+            background-size: cover;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="city"></div>
+    <div class="city content"></div>
+    <div class="city cover"></div>
+</body>
+
+</html>

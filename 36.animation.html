@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #afa;
+            border-radius: 50%;
+            animation-name: pinpon;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+        }
+
+        .box:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes pinpon {
+            0% {
+                transform: perspective(100px) translate(0, 0);
+            }
+
+            50% {
+                transform: perspective(100px) translate(200px, 150px);
+            }
+
+            100% {
+                transform: perspective(10px) translate(300px, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-wrap">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

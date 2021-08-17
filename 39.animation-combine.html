@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation-combine</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            animation: boxcolor 1s infinite alternate, moving 1.5s infinite alternate;
+
+        }
+
+        @keyframes boxcolor {
+            0% {
+                background-color: lightcoral;
+
+            }
+
+            100% {
+                background-color: lightskyblue;
+
+            }
+        }
+
+        @keyframes moving {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(300px, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

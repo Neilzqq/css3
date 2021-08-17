@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rotateY</title>
+</head>
+<style>
+    .demo {
+        width: 400px;
+        height: 300px;
+        margin: 200px;
+        perspective: 1000px;
+    }
+
+    .axia-x {
+        width: 300px;
+        height: 1px;
+        position: absolute;
+        border-top: 1px solid #ccc;
+        transform: translate(-100px, 50px);
+
+    }
+
+    .axia-x::before {
+        content: "-x";
+    }
+
+    .axia-x::after {
+        content: "+x";
+        float: right;
+    }
+
+    .axia-y {
+        width: 1px;
+        height: 300px;
+        position: absolute;
+        border-left: 1px solid #ccc;
+        transform: translate(50px, -100px);
+    }
+
+    .axia-y::before {
+        position: absolute;
+        content: "-y";
+        margin: 0 0 0 5px;
+        width: 20px;
+
+    }
+
+    .axia-y::after {
+        position: absolute;
+        content: "+y";
+        margin: 280px 0 0 5px;
+
+    }
+
+    .axia-z {
+        width: 300px;
+        height: 1px;
+        position: absolute;
+        border-top: 1px dashed #ccc;
+        transform: translate(-100px, 50px) rotate(33deg);
+
+    }
+
+    .axia-z::before {
+        content: "-z";
+    }
+
+    .axia-z::after {
+        content: "+z";
+        float: right;
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: #afa;
+        opacity: .6;
+        animation-name: rotateY;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes rotateY {
+        0% {
+            transform: rotate3d(0, 1, 0, 0) translate3d(0, 0, 150px)
+        }
+
+        100% {
+            transform: rotate3d(0, 1, 1, 360deg) translate3d(0, 0, 150px)
+        }
+    }
+</style>
+
+<body>
+    <div class="demo">
+        <div class="coordinate">
+            <div class="axia-x"></div>
+            <div class="axia-y"></div>
+            <div class="axia-z"></div>
+        </div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

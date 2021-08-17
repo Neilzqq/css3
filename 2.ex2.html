@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex2</title>
+    <!-- resetcss, normalize css 面試官會問差別 -->
+    <style>
+        .card {
+            width: 200px;
+            /* 不要寫死(min-height: ;)  */
+            overflow: hidden;
+            text-align: center;
+            border-radius: 3px;
+            box-shadow: 3px 3px 5px #000;
+            /* ------------ex2.p1----------------- */
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 20px auto;
+            /* ------------ex2.p1----------------- */
+        }
+
+        .circle img {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            /* ------------ex2.p1----------------- */
+        }
+
+
+        h1 {
+            width: 80%;
+            /* 下底線就是整個b是整個border四邊的下線-可用padding-bottom */
+            border-bottom: 1px solid #CCC;
+            margin: 0 auto;
+            padding-bottom: 10px;
+            /* ------------ex2.p1----------------- */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <figure class="circle">
+            <img src="images/ex1_pic1.jpg" alt="">
+        </figure>
+
+        <h1>jean</h1>
+        <p>hello,nice to meet you.</p>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>translate</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #ccc;
+            transition: .5s;
+            display: inline-block;
+            margin-right: 10px;
+            transform-origin: 0% 0%;
+        }
+
+        .translateX:hover {
+            transform: translateX(100px);
+
+        }
+
+        .translateY:hover {
+            transform: translateY(100px);
+            background: url(./images/1.png) 50% 50% no-repeat;
+
+        }
+
+        .scaleX:hover {
+            transform: scaleX(2);
+
+        }
+
+        .scaleY:hover {
+            transform: scaleY(2);
+
+        }
+
+        .skewX:hover {
+            transform: skewX(30deg);
+
+        }
+
+        .skewY:hover {
+            transform: scaleY(30deg);
+
+        }
+
+        .rotate:hover {
+            transform: rotate(80deg);
+            background: url(./images/1.png) 0 center no-repeat;
+        }
+
+        .combo:hover {
+            transform: translateX(100px) skew(300deg) rotate(80deg)
+        }
+    </style>
+
+
+
+</head>
+
+<!-- ctrl+shift+p--------wrap-------.xxxxxx 快速包div    -->
+
+<body>
+    <div class="box translateX">translateX</div>
+    <div class="box translateY">translateY</div>
+    <div class="box rotate">rotate</div>
+    <div class="box scaleY">scaleY</div>
+    <div class="box scaleX">scaleX</div>
+    <div class="box skewY">skewY</div>
+    <div class="box skewX">skewX</div>
+    <div class="box combo">123456</div>
+</body>
+
+
+</html>

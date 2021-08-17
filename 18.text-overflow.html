@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+        .content {
+            width: 200px;
+            height: 300px;
+            background-color: #CCC;
+        }
+
+        .single {
+            /* 一定要三個條件有設定才能顯示出效果 */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .single2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <p class="single">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque labore hic, earum repellat non, officia
+            odit tempore, voluptatum sit quam saepe voluptatem. Quod, quidem deserunt dolor fugiat corporis officiis
+            harum.
+        </p>
+    </div>
+    <div class="content">
+        <p class="single2">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque labore hic, earum repellat non, officia
+            odit tempore, voluptatum sit quam saepe voluptatem. Quod, quidem deserunt dolor fugiat corporis officiis
+            harum.
+        </p>
+    </div>
+</body>
+
+</html>
